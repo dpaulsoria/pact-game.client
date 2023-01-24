@@ -1,5 +1,5 @@
 const maxPlayers = 4;
-const ENDPOINT = "https://pact-game.azurewebsites.net";
+const ENDPOINT = "https://pact-gameserver-production.up.railway.app/";
 const connectionOptions = {
   forceNew: true,
   reconnectionAttempts: "Infinity",
