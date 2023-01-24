@@ -1,10 +1,10 @@
 const maxPlayers = 4;
-const ENDPOINT = "http://localhost:80";
+const ENDPOINT = "https://pact-game.azurewebsites.net";
 const connectionOptions = {
   forceNew: true,
   reconnectionAttempts: "Infinity",
   timeout: 10000,
-  transports: ["websocket"]
+  transports: ["websocket"],
 };
 const style = {
   position: "absolute",
@@ -19,7 +19,7 @@ const style = {
   border: "1px solid ",
   borderRadius: 3,
   boxShadow: 24,
-  p: 2
+  p: 2,
 };
 
 const center = {
@@ -29,7 +29,7 @@ const center = {
   justifyContent: "center",
   gap: 2,
   width: 250,
-  height: 350
+  height: 350,
 };
 
 const modal = {
@@ -39,7 +39,7 @@ const modal = {
   justifyContent: "center",
   bgcolor: "background.paper",
   borderRadius: 3,
-  boxShadow: 24
+  boxShadow: 24,
 };
 
 const reglas = {
@@ -49,7 +49,7 @@ const reglas = {
   4: "Los demás participantes tomarán el papel de jurado y deliberarán cual es la opción correcta.",
   5: "Se anuncia cual es la respuesta seleccionada por el jurado.",
   6: "Si el jugador adivino correctamente , el acusado ganará un punto.",
-  7: "Se escoge al siguiente acusado."
+  7: "Se escoge al siguiente acusado.",
 };
 
 export {
@@ -59,5 +59,5 @@ export {
   style,
   reglas,
   center,
-  modal
+  modal,
 };
